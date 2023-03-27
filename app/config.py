@@ -12,3 +12,14 @@ class BotConf:
     BOT_TOKEN: str
     USE_REDIS: str
     ADMIN: int
+
+
+@dataclass
+class DbConf:
+    DB_NAME: str
+    DB_USER: str
+    DB_PASSWD: str
+    DB_HOST: str
+    DB_PORT: str
+    SCHEME: str
+    SQLALCHEMY_DATABASE_URI: str
